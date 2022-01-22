@@ -11,14 +11,15 @@
         "id": "7d2a39d6b0947d4e",
         "type": "inject",
         "z": "bd4455d3309a3a1a",
-        "name": "",
+        "name": "Start",
         "props": [
             {
                 "p": "payload"
             },
             {
-                "p": "topic",
-                "vt": "str"
+                "p": "line",
+                "v": "0",
+                "vt": "num"
             }
         ],
         "repeat": "",
@@ -26,9 +27,28 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 250,
+        "payload": "Test Text",
+        "payloadType": "str",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "38a25511aed7d725"
+            ]
+        ]
+    },
+    {
+        "id": "38a25511aed7d725",
+        "type": "i2c out",
+        "z": "bd4455d3309a3a1a",
+        "name": "",
+        "busno": "1",
+        "address": "27",
+        "command": "0",
+        "payload": "payload",
+        "payloadType": "msg",
+        "count": "1",
+        "x": 380,
         "y": 160,
         "wires": [
             []
