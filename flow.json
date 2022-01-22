@@ -33,21 +33,26 @@
         "y": 160,
         "wires": [
             [
-                "38a25511aed7d725"
+                "21e526c3cf8f12c8"
             ]
         ]
     },
     {
-        "id": "38a25511aed7d725",
-        "type": "i2c out",
+        "id": "21e526c3cf8f12c8",
+        "type": "function",
         "z": "bd4455d3309a3a1a",
         "name": "",
-        "busno": "1",
-        "address": "27",
-        "command": "0",
-        "payload": "payload",
-        "payloadType": "msg",
-        "count": "1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "I2C",
+                "module": "i2c-bus"
+            }
+        ],
         "x": 380,
         "y": 160,
         "wires": [
