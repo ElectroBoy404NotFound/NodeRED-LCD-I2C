@@ -2,7 +2,9 @@
     "name": "NodeRED-LCD-I2C",
     "description": "A Node-RED Project",
     "version": "0.0.1",
-    "dependencies": {},
+    "dependencies": {
+        "node-red-contrib-i2c": "0.9.0"
+    },
     "node-red": {
         "settings": {
             "flowFile": "flow.json",
